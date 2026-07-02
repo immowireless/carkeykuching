@@ -632,16 +632,15 @@
       👁️ <span id="visit-count">…</span> website views
     </p>
     <script>
-      fetch('https://api.countapi.xyz/hit/carkeykuching-immowireless/visits')
+      fetch('https://countapi.mileshilliard.com/api/v1/hit/carkeykuching-immowireless-visits')
         .then(function(res) { return res.json(); })
         .then(function(data) {
-          document.getElementById('visit-count').textContent = data.value.toLocaleString();
+          document.getElementById('visit-count').textContent = Number(data.value).toLocaleString();
         })
         .catch(function() {
           document.getElementById('visit-count').textContent = 'N/A';
         });
     </script>
   </footer>
-
 </body>
 </html>
