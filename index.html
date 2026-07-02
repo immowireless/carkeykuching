@@ -274,6 +274,22 @@
       border-radius: 4px;
       margin-bottom: 0.75rem;
     }
+    .service-card .model-list {
+      margin-top: 0.85rem;
+      padding-top: 0.75rem;
+      border-top: 1px dashed #e5e7eb;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+    }
+    .service-card .model-chip {
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--navy);
+      background: rgba(10,22,40,0.05);
+      padding: 0.2rem 0.55rem;
+      border-radius: 4px;
+    }
 
     /* PERODUA BEZZA SECTION */
     .bezza-section {
@@ -487,14 +503,30 @@
       </div>
       <div class="service-card">
         <span class="card-num">06</span>
-        <div class="tag">Toyota · Honda · Mitsubishi</div>
+        <div class="tag">Toyota · Honda · Nissan · Isuzu · Mitsubishi</div>
         <h3>Duplicate Remote — Toyota, Honda & More</h3>
-        <p>Key cutting, remote programming, immobilizer & smart key remote programming for Japanese brands.</p>
+        <p>Key cutting, remote programming, immobilizer & smart key remote programming for Japanese brands, covering the models below.</p>
+        <div class="model-list">
+          <span class="model-chip">Toyota Vios</span>
+          <span class="model-chip">Toyota Altis</span>
+          <span class="model-chip">Toyota Avanza</span>
+          <span class="model-chip">Toyota Hilux</span>
+          <span class="model-chip">Toyota Yaris</span>
+          <span class="model-chip">Honda HR-V</span>
+          <span class="model-chip">Honda Civic</span>
+          <span class="model-chip">Honda City</span>
+          <span class="model-chip">Honda Jazz</span>
+          <span class="model-chip">Honda BR-V</span>
+          <span class="model-chip">Nissan Almera</span>
+          <span class="model-chip">Nissan Livina</span>
+          <span class="model-chip">Isuzu D-Max</span>
+          <span class="model-chip">Mitsubishi Triton</span>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- BEZZA SECTION -->
+  <!-- PERODUA BEZZA SECTION -->
   <section id="bezza-service" class="bezza-section">
     <div class="bezza-inner">
       <p class="section-label">Featured Service</p>
@@ -596,6 +628,19 @@
       📞 <a href="tel:0102835120">010-2835120</a> &nbsp;|&nbsp; Serving all of Kuching, Sarawak
     </p>
     <p style="margin-top: 1rem; font-size: 0.78rem; opacity: 0.45;">© 2025 Car Key Kuching · Immo Wireless</p>
+    <p style="margin-top: 1rem; font-size: 0.85rem; color: var(--gold-light);">
+      👁️ <span id="visit-count">…</span> website views
+    </p>
+    <script>
+      fetch('https://api.countapi.xyz/hit/carkeykuching-immowireless/visits')
+        .then(function(res) { return res.json(); })
+        .then(function(data) {
+          document.getElementById('visit-count').textContent = data.value.toLocaleString();
+        })
+        .catch(function() {
+          document.getElementById('visit-count').textContent = 'N/A';
+        });
+    </script>
   </footer>
 
 </body>
