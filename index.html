@@ -4,28 +4,46 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="On-site service kunci kereta hilang di Kuching. Professional car key duplication, remote programming & smart key services. Call 010-2835120."/>
-  <title>Car Key Kuching — Remote Control Car Key Locksmith</title>
+  <meta name="description" content="Need a spare key or lost all your car keys in Kuching? Get car key duplication, remote programming and automotive locksmith help. Call 010-2835120."/>
+  <title>Car Key Duplication &amp; Lost Keys in Kuching | Car Key Kuching</title>
+  <link rel="canonical" href="https://carkeykuching.com/" />
+  <meta property="og:title" content="Car Key Duplication &amp; Lost Keys in Kuching | Car Key Kuching" />
+  <meta property="og:description" content="Need a spare key or lost all your car keys in Kuching? Call 010-2835120 to ask about key duplication and programming." />
+  <meta property="og:url" content="https://carkeykuching.com/" />
+  <meta property="og:type" content="website" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@600;700;800&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
-<script type="application/ld+json">
+  <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-  "@type": ["AutomotiveBusiness", "Locksmith"],
-    "name": "Remote control Car key (immo wireless)",
-  "alternateName": ["Car Key Kuching", "Remote Control Car Key Locksmith"],
-    "identifier": "11889560662481340456",
-    "url": "https://carkeykuching.com/",
-    "telephone": "010-2835120",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "2nd floor, Jalan Tabuan Tranquility, Phase 3",
-      "addressLocality": "Kuching",
-      "addressRegion": "Sarawak",
-      "postalCode": "93350",
-      "addressCountry": "MY"
-    }
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://carkeykuching.com/#website",
+        "name": "Car Key Kuching",
+        "url": "https://carkeykuching.com/",
+        "publisher": { "@id": "https://carkeykuching.com/#business" }
+      },
+      {
+        "@type": ["AutomotiveBusiness", "Locksmith"],
+        "@id": "https://carkeykuching.com/#business",
+        "name": "Remote control Car key (immo wireless)",
+        "alternateName": ["Car Key Kuching", "Remote Control Car Key Locksmith"],
+        "identifier": "11889560662481340456",
+        "url": "https://carkeykuching.com/",
+        "telephone": "+60102835120",
+        "hasMap": "https://maps.app.goo.gl/DHBsEPbUeHrHVvCJ7?g_st=ac",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "2nd floor, Jalan Tabuan Tranquility, Phase 3",
+          "addressLocality": "Kuching",
+          "addressRegion": "Sarawak",
+          "postalCode": "93350",
+          "addressCountry": "MY"
+        }
+      }
+    ]
   }
   </script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-1XF6CVNWQ8"></script>
@@ -90,6 +108,9 @@
       transition: background 0.2s;
     }
     .nav-cta:hover { background: var(--gold-light); }
+    .nav-links { display: flex; align-items: center; gap: 0.8rem; }
+    .nav-links a { color: rgba(255,255,255,0.8); text-decoration: none; font-size: 0.78rem; font-weight: 600; }
+    .nav-links a:hover { color: var(--gold-light); }
 
     /* HERO */
     .hero {
@@ -263,6 +284,7 @@
       color: var(--muted);
       line-height: 1.6;
     }
+    .service-card > a { display: inline-block; margin-top: 0.8rem; color: #80560b; font-size: 0.86rem; font-weight: 700; text-decoration: underline; text-underline-offset: 3px; }
     .service-card .tag {
       display: inline-block;
       background: rgba(232,160,32,0.1);
@@ -375,6 +397,9 @@
       border-radius: 12px;
       overflow: hidden;
       border: 1px solid #e5e7eb;
+      display: flex;
+      justify-content: center;
+      padding: 1.25rem;
     }
     .map-wrapper iframe { display: block; width: 100%; height: 420px; }
 
@@ -417,6 +442,9 @@
 
     /* UTIL */
     .center { text-align: center; }
+    @media (max-width: 900px) {
+      .nav-links { display: none; }
+    }
     @media (max-width: 600px) {
       nav { padding: 0 1rem; }
       .hero { padding: 3.5rem 1rem 3rem; }
@@ -429,17 +457,25 @@
   <!-- NAV -->
   <nav>
     <div class="nav-brand">Car Key <span>Kuching</span></div>
-    <a class="nav-cta" href="tel:0102835120">📞 010-2835120</a>
+    <div class="nav-links">
+      <a href="#services">Services</a>
+      <a href="/car-key-duplication-kuching/">Duplication</a>
+      <a href="/lost-car-keys-kuching/">Lost keys</a>
+      <a href="/car-remote-programming/">Remote programming</a>
+      <a href="/immobilizer/">Immobilizer</a>
+      <a href="/car-door-unlocking/">Door unlocking</a>
+    </div>
+    <a class="nav-cta" href="tel:0102835120" data-cta-location="header">📞 010-2835120</a>
   </nav>
 
   <!-- HERO -->
   <header class="hero">
-    <div class="hero-eyebrow">Kuching, Sarawak · On-Site Service</div>
-    <h1>Lost Your Car <span>Keys?</span><br>We Come To You.<br>Kunci Kereta Hilang.<br>Unlock car door.<br>Buka pintu terkunci</h1>
-    <p class="hero-sub">Professional key duplication, remote programming & smart key replacement for Perodua, Proton, Toyota, Honda & more.</p>
+    <div class="hero-eyebrow">Kuching, Sarawak · Call to Confirm Availability</div>
+    <h1>Car Key Duplication &amp; Lost Keys in <span>Kuching</span></h1>
+    <p class="hero-sub">Ask about car key duplication, lost-key recovery, remote programming and smart keys for your vehicle. Call to confirm your model and the available service.</p>
     <p class="hero-address">📍 2nd Floor, Jalan Tabuan Tranquility Phase 3, 93350 Kuching</p>
     <div class="hero-actions">
-      <a class="btn-primary" href="tel:0102835120">📞 Call 010-2835120</a>
+      <a class="btn-primary" href="tel:0102835120" data-cta-location="hero">📞 Call 010-2835120</a>
       <a class="btn-outline" href="#services">Our Services</a>
     </div>
   </header>
@@ -448,19 +484,19 @@
   <div class="trust-bar">
     <div class="trust-item">
       <div class="icon">✓</div>
-      On-Site Service
+      Key &amp; Remote Services
     </div>
     <div class="trust-item">
       <div class="icon">✓</div>
-      Ready in &lt;15 Minutes
+      Ask About Timing
     </div>
     <div class="trust-item">
       <div class="icon">✓</div>
-      Affordable Prices
+      Call for Pricing
     </div>
     <div class="trust-item">
       <div class="icon">✓</div>
-      Serving Since 2022
+      Call to Confirm Availability
     </div>
   </div>
 
@@ -469,44 +505,50 @@
     <div style="text-align:center; max-width: 1000px; margin: 0 auto;">
       <p class="section-label">What We Do</p>
       <h2 class="section-title">Our Services</h2>
-      <p class="section-body" style="margin: 0 auto;">Full range of car key services — from lost key recovery to smart key programming, all done fast at your location or our shop in Kuching.</p>
+      <p class="section-body" style="margin: 0 auto;">Car key duplication, lost key recovery, remote programming, immobilizer programming and door unlocking. Call with your vehicle details to confirm the service for your model.</p>
     </div>
     <div class="services-grid">
       <div class="service-card">
         <span class="card-num">01</span>
         <div class="tag">Perodua</div>
-        <h3>All Key Lost — Perodua Cars</h3>
-        <p>Full key & remote recovery for Perodua Viva, Myvi, Alza, Axia, Bezza & more. No original key needed.</p>
+        <h3>Lost Car Keys — Perodua</h3>
+        <p>Ask about lost-key recovery for Perodua Viva, Myvi, Alza, Axia, Bezza and other models. Call with the model and year to confirm availability.</p>
+        <a href="/lost-car-keys-kuching/">All keys lost service</a>
       </div>
       <div class="service-card">
         <span class="card-num">02</span>
-        <div class="tag">Unlock door</div>
-        <h3>Kunci Tertinggal dalam kereta, lockout</h3>
-        <p>Unlock car door service, service buka pintu kereta.</p>
+        <div class="tag">Door unlocking</div>
+        <h3>Car Door Unlocking / Buka Pintu Kereta</h3>
+        <p>Ask about car door unlocking. Share the vehicle details and location to confirm whether service is available.</p>
+        <a href="/car-door-unlocking/">Car door unlocking details</a>
       </div>
       <div class="service-card">
         <span class="card-num">03</span>
         <div class="tag">Remote</div>
-        <h3>Remote Hilang — Buat Remote Spare</h3>
-        <p>Duplicate, repair & program new remotes for Perodua Myvi, Alza, Viva, Bezza, Axia, Aruz, Proton Saga, Persona, X70, X50.</p>
+        <h3>Car Remote Duplication, Repair &amp; Programming</h3>
+        <p>Ask about remote duplication, repair or programming for the listed Perodua and Proton models. Confirm the vehicle year and system before arranging service.</p>
+        <a href="/car-remote-programming/">Remote programming details</a>
       </div>
       <div class="service-card">
         <span class="card-num">04</span>
         <div class="tag">Smart Key</div>
-        <h3>Smart Key & Push-Start Lost Key</h3>
-        <p>On-site smart key replacement and programming for push-start vehicles — Perodua, Proton, Toyota, Honda.</p>
+        <h3>Smart Key &amp; Push-Start Programming</h3>
+        <p>Ask about smart key replacement and push-start programming for your vehicle. Availability depends on model and key system.</p>
+        <a href="/immobilizer/">Immobilizer programming details</a>
       </div>
       <div class="service-card">
         <span class="card-num">05</span>
         <div class="tag">Perodua · Proton</div>
-        <h3>Duplicate Remote — Perodua & Proton</h3>
-        <p>Key cutting, remote programming & immobilizer programming services for all Perodua and Proton models.</p>
+        <h3>Perodua &amp; Proton Key Programming</h3>
+        <p>Ask about key cutting, remote programming and immobilizer programming for a Perodua or Proton. Confirm the exact model and year.</p>
+        <a href="/car-key-duplication-kuching/">Car key duplication details</a>
       </div>
       <div class="service-card">
         <span class="card-num">06</span>
         <div class="tag">Toyota · Honda · Nissan · Isuzu · Mitsubishi</div>
         <h3>Duplicate Remote — Toyota, Honda & More</h3>
-        <p>Key cutting, remote programming, immobilizer & smart key remote programming for Japanese brands, covering the models below.</p>
+        <p>Ask about key cutting, remote programming, immobilizer and smart key services for these listed makes and models. Confirm the exact year and key system before arranging service.</p>
+        <a href="/car-key-duplication-kuching/">Ask about key duplication</a>
         <div class="model-list">
           <span class="model-chip">Toyota Vios</span>
           <span class="model-chip">Toyota Altis</span>
@@ -523,6 +565,7 @@
           <span class="model-chip">Isuzu D-Max</span>
           <span class="model-chip">Mitsubishi Triton</span>
         </div>
+        <p>Vehicle examples are not a compatibility guarantee; call with the year and variant to confirm.</p>
       </div>
     </div>
   </section>
@@ -531,15 +574,15 @@
   <section id="bezza-service" class="bezza-section">
     <div class="bezza-inner">
       <p class="section-label">Featured Service</p>
-      <h2 class="section-title">Service semua kunci hilang<br>/ all key lost</h2>
-      <p class="section-body">Lost all your car key/ remote and no spare? We provide recovery service and programming right here in Kuching, Sarawak — faster and more affordable than 3S centres.</p>
+      <h2 class="section-title">All Keys Lost? Kunci Kereta Hilang</h2>
+      <p class="section-body">Lost every key or remote? Call with your car make, model and year so we can discuss the available recovery and programming options.</p>
       <ul class="bezza-list">
-        <li>We can handle all Perodua cars, Proton cars, Toyota Honda Cars, key start and push start</li>
-        <li>Proton key immobilizer chip hilang, re-program chip immobilizer</li>
-        <li>Door cannot open? we can emergency unlock car door</li>
-        <li>Mobile on-site service — we come to you anywhere in Kuching</li>
+        <li>Tell us the car make, model, year and whether it uses a key or push-start system</li>
+        <li>Ask about Proton transponder and immobilizer key programming</li>
+        <li>For a locked door, call and describe the vehicle and situation</li>
+        <li>Share your location when calling to confirm whether mobile service is available</li>
       </ul>
-      <a class="btn-primary" href="tel:0102835120">📞 Contact Us: 010-2835120</a>
+      <a class="btn-primary" href="tel:0102835120" data-cta-location="all-keys-lost">📞 Contact Us: 010-2835120</a>
     </div>
   </section>
 
@@ -548,32 +591,31 @@
     <div class="faq-inner">
       <div style="text-align:center; margin-bottom: 1rem;">
         <p class="section-label">Common Questions</p>
-        <h2 class="section-title">Duplicate key remote or all key lost FAQ</h2>
-        <h2 class="section-title">Buat kunci remote ke-dua atau kunci semua hilang FAQ</h2>
+        <h2 class="section-title">Frequently Asked Questions / Soalan Lazim</h2>
       </div>
       <div class="faq-item">
         <p class="faq-q">How much does it cost to duplicate car key and remote in Kuching?</p>
-        <p class="faq-a">The cost of key remote duplication is range from <strong>RM60</strong> to <strong>RM160</strong>. actual price depends on car models. Call us at 010-2835120 for exact pricing.</p>
+        <p class="faq-a">Pricing depends on the vehicle and key type. Call <strong>010-2835120</strong> with your make, model and year for a current quote.</p>
       </div>
        <div class="faq-item">
         <p class="faq-q">Keyless smart remote cost higher than normal key start remote in Kuching?</p>
-        <p class="faq-a">Yes, keyless remote cost higher, range from <strong>RM200</strong> to <strong>RM400</strong>. actual price depends on car models. Call us at 010-2835120 for exact pricing.</p>
+        <p class="faq-a">Smart key pricing depends on the vehicle and key system. Call <strong>010-2835120</strong> with your make, model and year for a current quote.</p>
       </div>
       <div class="faq-item">
         <p class="faq-q">How long does it take to duplicate a car key and remote?</p>
-        <p class="faq-a">Typically <strong>less than 15 minutes</strong> to complete the duplication and programming. Fast, efficient, and done at your location.</p>
+        <p class="faq-a">Timing depends on the vehicle and the work required. Call with your make, model and year to discuss the job.</p>
       </div>
       <div class="faq-item">
         <p class="faq-q">if i lost all car key, do i need to change new set of key system?</p>
-        <p class="faq-a"> <strong>No need.</strong> we will recover back to original key and remote, no need to change anything in the car.</p>
+        <p class="faq-a">It depends on the vehicle’s key and immobilizer system. Call with the make, model and year so we can discuss the available options.</p>
       </div>
       <div class="faq-item">
         <p class="faq-q">Do you provide on-site service if I'm stranded?</p>
-        <p class="faq-a">Yes! We offer <strong>mobile on-site service</strong> across Kuching. Call 010-2835120 and we'll come to you.</p>
+        <p class="faq-a">Call <strong>010-2835120</strong> and share your location and vehicle details to confirm whether mobile service is available.</p>
       </div>
        <div class="faq-item">
         <p class="faq-q">Kalau kereta saya di Sri Aman, Sarikei, Sibu, luar Kuching, dapat buat ke tidak?</p>
-        <p class="faq-a">Dapat. kami akan bagitahu cara dia, hubungi kami <strong>010-2835120</strong>.</p>
+        <p class="faq-a">Sila hubungi kami di <strong>010-2835120</strong> dan beritahu lokasi serta model kereta. Kami akan sahkan sama ada servis tersedia untuk lokasi anda.</p>
       </div>
     </div>
   </section>
@@ -586,16 +628,16 @@
         <h2 class="section-title">Our Experience</h2>
       </div>
       <div class="photo-grid">
-        <img src="github-photo1.png" alt="Car key remote Kuching service" />
-        <img src="webp01.png" alt="Honda car key remote Kuching" />
-        <img src="webp02.png" alt="Perodua Bezza key remote Kuching" />
-        <img src="webp03.png" alt="Honda City key remote Kuching" />
-        <img src="webp04.png" alt="Toyota Vios key remote Kuching" />
-        <img src="webp05.png" alt="Proton Saga key remote Kuching" />
-        <img src="webp06.png" alt="Perodua Myvi key remote Kuching" />
-        <img src="webp07.png" alt="Perodua Kelisa key remote Kuching" />
-        <img src="webp08.png" alt="Proton Saga key remote Kuching" />
-        <img src="webp09.png" alt="Perodua all key lost immobilizer Kuching" />
+        <img src="assets/images/key-remotes.webp" alt="A selection of car key remotes" width="657" height="900" loading="lazy" decoding="async" />
+        <img src="assets/images/honda-key-remote.webp" alt="Honda key remote shown beside a steering wheel" width="900" height="685" loading="lazy" decoding="async" />
+        <img src="assets/images/car-key-remote-programming.webp" alt="Car key remotes prepared for programming" width="674" height="900" loading="lazy" decoding="async" />
+        <img src="assets/images/honda-city-remote.webp" alt="Car remote shown beside a Honda vehicle" width="900" height="900" loading="lazy" decoding="async" />
+        <img src="assets/images/toyota-key-remote.webp" alt="Toyota key and remote inside a vehicle" width="900" height="900" loading="lazy" decoding="async" />
+        <img src="assets/images/proton-key-remote.webp" alt="Car key remote shown beside a sedan" width="900" height="900" loading="lazy" decoding="async" />
+        <img src="assets/images/perodua-key-remote.webp" alt="Car remote shown beside a vehicle dashboard" width="900" height="900" loading="lazy" decoding="async" />
+        <img src="assets/images/perodua-kelisa-key.webp" alt="Car remote shown with a blue vehicle" width="900" height="900" loading="lazy" decoding="async" />
+        <img src="assets/images/key-programming-equipment.webp" alt="Car key beside key programming equipment" width="900" height="900" loading="lazy" decoding="async" />
+        <img src="assets/images/viva-immobilizer-work.webp" alt="Perodua Viva key and immobilizer work" width="900" height="900" loading="lazy" decoding="async" />
       </div>
     </div>
   </section>
@@ -609,12 +651,7 @@
         <p class="section-body" style="margin: 0 auto 0;">2nd Floor, Jalan Tabuan Tranquility Phase 3, 93350 Kuching, Sarawak</p>
       </div>
       <div class="map-wrapper">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.4289301604963!2d110.38763787418863!3d1.5121183610344078!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31fba7617b711eab%3A0x40df4f7c00e58e68!2sRemote%20control%20guru!5e0!3m2!1sen!2ssg!4v1751460549263!5m2!1sen!2ssg"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
+        <a class="btn-primary" href="https://maps.app.goo.gl/DHBsEPbUeHrHVvCJ7?g_st=ac" target="_blank" rel="noopener noreferrer">View our Google Maps listing</a>
       </div>
     </div>
   </section>
@@ -623,31 +660,32 @@
   <section class="about">
     <p class="section-label">Who We Are</p>
     <h2 class="section-title">About Us</h2>
-    <p style="color: rgba(255,255,255,0.6); max-width: 500px; margin: 0.75rem auto 0;">Providing the most affordable car key service in Kuching — duplication and full key recovery since 2022.</p>
+    <p style="color: rgba(255,255,255,0.6); max-width: 500px; margin: 0.75rem auto 0;">Car key duplication and lost-key services in Kuching. Call to confirm your vehicle details and available options.</p>
     <div class="about-stats">
       <div>
-        <div class="stat-num">3+</div>
-        <div class="stat-label">Years Experience</div>
+        <div class="stat-num">Call</div>
+        <div class="stat-label">010-2835120</div>
       </div>
       <div>
-        <div class="stat-num">&lt;15</div>
-        <div class="stat-label">Minutes to Complete</div>
+        <div class="stat-num">Keys</div>
+        <div class="stat-label">Duplication &amp; Programming</div>
       </div>
       <div>
-        <div class="stat-num">10+</div>
-        <div class="stat-label">Car Brands Covered</div>
+        <div class="stat-num">Kuching</div>
+        <div class="stat-label">Location</div>
       </div>
     </div>
   </section>
 
   <!-- FOOTER -->
   <footer>
-    <p style="margin-bottom: 0.5rem;"><strong>Remote Control Car Key Locksmith</strong></p>
+    <p style="margin-bottom: 0.5rem;"><strong>Car Key Kuching</strong></p>
     <p>2nd Floor, Jalan Tabuan Tranquility Phase 3, 93350 Kuching, Sarawak</p>
     <p style="margin-top: 0.4rem;">
-      📞 <a href="tel:0102835120">010-2835120</a> &nbsp;|&nbsp; Serving all of Kuching, Sarawak
+      📞 <a href="tel:0102835120" data-cta-location="footer">010-2835120</a> &nbsp;|&nbsp; Serving Kuching, Sarawak
     </p>
-    <p style="margin-top: 1rem; font-size: 0.78rem; opacity: 0.45;">© 2025 Car Key Kuching · Remote Control Car Key</p>
+    <p><a href="/car-key-duplication-kuching/">Key Duplication</a> · <a href="/lost-car-keys-kuching/">All Keys Lost</a> · <a href="/car-remote-programming/">Remote Programming</a> · <a href="/immobilizer/">Immobilizer Programming</a> · <a href="/car-door-unlocking/">Car Door Unlocking</a></p>
+    <p style="margin-top: 1rem; font-size: 0.78rem; opacity: 0.45;">© 2026 Car Key Kuching</p>
     <p style="margin-top: 1rem; font-size: 0.85rem; color: var(--gold-light);">
       👁️ <span id="visit-count">…</span> website views
     </p>
@@ -662,5 +700,6 @@
         });
     </script>
   </footer>
+  <script defer src="/assets/js/analytics.js"></script>
 </body>
 </html>
